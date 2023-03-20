@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "KAmoliddin",
+      "password": "1234567890",
+      "acess": false,
+      "id": 1
+    },
+    {
+      "name": "KA2oliddin",
+      "password": "123123123",
+      "acess": false,
+      "id": 3
+    },
+    {
+      "name": "K1moliddin",
+      "password": "123123123",
+      "acess": false,
+      "id": 4
+    },
+    {
+      "name": "Кого ебет отчим",
+      "password": "12121212",
+      "acess": false,
+      "id": 5
+    },
+    {
+      "name": "salat_lox",
+      "password": "loshara",
+      "acess": false,
+      "id": 7
+    }
+  ],
+  "liked_songs": [
+    {
+      "name": "I Wish I Knew",
+      "author": "Eikli",
+      "img": "https://i.scdn.co/image/ab67616d00004851c67e339c084f8a98b1ac0bfd",
+      "track": "https://p.scdn.co/mp3-preview/6128b95ec8f33717c243951c4c1245b0272cb644?cid=aefc3f567f7342ab83ee69ecaae51dec",
+      "date": "2022-01-28",
+      "album": "I Wish I Knew",
+      "duration": 231818,
+      "id": 1
+    }
+  ]
+}

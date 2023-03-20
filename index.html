@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div class="progres_box ">
+        <div class="progress_conteiner">
+            <div id="myBar" class="progres_bar"></div>
+        </div>
+    </div>
+
+    <div class="registr_box none ">
+        <img src="./img/9104213_close_cross_remove_delete_icon (1).svg" class="cross_boxes" alt="">
+        <div class="blogo_box">
+            <svg role="img" viewBox="0 0 78 24" class="big_logo">
+                <path
+                    d="M18.616 10.639c-3.77-2.297-9.99-2.509-13.59-1.388a1.077 1.077 0 0 1-1.164-.363 1.14 1.14 0 0 1-.119-1.237c.136-.262.37-.46.648-.548 4.132-1.287 11-1.038 15.342 1.605a1.138 1.138 0 0 1 .099 1.863 1.081 1.081 0 0 1-.813.213c-.142-.02-.28-.07-.403-.145Zm-.124 3.402a.915.915 0 0 1-.563.42.894.894 0 0 1-.69-.112c-3.144-1.983-7.937-2.557-11.657-1.398a.898.898 0 0 1-.971-.303.952.952 0 0 1-.098-1.03.929.929 0 0 1 .54-.458c4.248-1.323 9.53-.682 13.14 1.595a.95.95 0 0 1 .3 1.286Zm-1.43 3.267a.73.73 0 0 1-.45.338.712.712 0 0 1-.553-.089c-2.748-1.722-6.204-2.111-10.276-1.156a.718.718 0 0 1-.758-.298.745.745 0 0 1-.115-.265.757.757 0 0 1 .092-.563.737.737 0 0 1 .457-.333c4.455-1.045 8.277-.595 11.361 1.338a.762.762 0 0 1 .241 1.028ZM11.696 0C5.237 0 0 5.373 0 12c0 6.628 5.236 12 11.697 12 6.46 0 11.698-5.372 11.698-12 0-6.627-5.238-12-11.699-12h.001Zm20.126 11.078c-2.019-.494-2.379-.84-2.379-1.57 0-.688.633-1.151 1.572-1.151.91 0 1.814.352 2.76 1.076a.131.131 0 0 0 .187-.03l.987-1.426a.139.139 0 0 0-.025-.185c-1.127-.928-2.396-1.378-3.88-1.378-2.18 0-3.703 1.342-3.703 3.263 0 2.06 1.315 2.788 3.585 3.352 1.932.457 2.258.84 2.258 1.524 0 .757-.659 1.229-1.72 1.229-1.18 0-2.141-.408-3.216-1.364a.13.13 0 0 0-.188.016l-1.106 1.35a.137.137 0 0 0 .013.188c1.252 1.147 2.79 1.752 4.451 1.752 2.35 0 3.869-1.317 3.869-3.356 0-1.723-1.003-2.676-3.465-3.29Zm10.487 2.31c0 1.454-.874 2.47-2.125 2.47-1.235 0-2.169-1.061-2.169-2.47 0-1.41.933-2.47 2.17-2.47 1.23 0 2.124 1.038 2.124 2.47Zm-1.706-4.354c-1.018 0-1.854.412-2.543 1.256v-.95a.136.136 0 0 0-.038-.095.132.132 0 0 0-.093-.04h-1.81a.131.131 0 0 0-.093.04.136.136 0 0 0-.039.096v10.546c0 .076.06.137.133.137h1.809a.132.132 0 0 0 .093-.041.136.136 0 0 0 .038-.096v-3.329c.69.794 1.525 1.18 2.543 1.18 1.893 0 3.808-1.494 3.808-4.35 0-2.858-1.915-4.354-3.808-4.354Zm8.72 6.839c-1.297 0-2.274-1.068-2.274-2.486 0-1.422.943-2.455 2.244-2.455 1.305 0 2.288 1.069 2.288 2.487 0 1.422-.949 2.454-2.258 2.454Zm0-6.838c-2.438 0-4.347 1.926-4.347 4.383 0 2.432 1.896 4.338 4.317 4.338 2.445 0 4.36-1.92 4.36-4.369 0-2.44-1.901-4.353-4.33-4.353Zm9.535.17h-1.99V7.117a.136.136 0 0 0-.08-.126.13.13 0 0 0-.052-.01h-1.809a.133.133 0 0 0-.093.04.136.136 0 0 0-.038.095v2.087h-.87a.131.131 0 0 0-.122.085.139.139 0 0 0-.01.052v1.595c0 .074.06.135.132.135h.87v4.126c0 1.667.809 2.513 2.404 2.513.648 0 1.186-.138 1.694-.434a.135.135 0 0 0 .067-.117V15.64a.137.137 0 0 0-.063-.115.13.13 0 0 0-.129-.006c-.349.18-.685.263-1.061.263-.58 0-.84-.271-.84-.876V11.07h1.99a.13.13 0 0 0 .094-.04.136.136 0 0 0 .039-.096V9.339a.137.137 0 0 0-.039-.096.132.132 0 0 0-.094-.04v.001Zm6.934.007v-.255c0-.755.281-1.092.914-1.092.376 0 .68.077 1.019.194a.13.13 0 0 0 .118-.02.135.135 0 0 0 .056-.11V6.365a.137.137 0 0 0-.026-.081.133.133 0 0 0-.068-.05 4.852 4.852 0 0 0-1.502-.22c-1.67 0-2.554.965-2.554 2.788v.393h-.87a.132.132 0 0 0-.093.04.136.136 0 0 0-.038.096v1.603c0 .075.059.136.132.136h.87v6.364c0 .075.058.135.131.135h1.809c.072 0 .131-.06.131-.135V11.07h1.69l2.586 6.362c-.294.669-.583.802-.977.802-.319 0-.654-.098-.998-.29a.133.133 0 0 0-.105-.01.135.135 0 0 0-.078.072l-.612 1.38a.137.137 0 0 0 .056.175 3.733 3.733 0 0 0 1.932.508c1.334 0 2.073-.638 2.724-2.355l3.137-8.317a.14.14 0 0 0-.014-.126.131.131 0 0 0-.108-.06h-1.883a.132.132 0 0 0-.126.092l-1.928 5.651L69.006 9.3a.133.133 0 0 0-.124-.088h-3.09v.001Zm-4.02-.008h-1.809a.132.132 0 0 0-.093.041.136.136 0 0 0-.038.096v8.094c0 .075.06.135.132.135h1.809c.072 0 .131-.06.131-.135V9.34a.136.136 0 0 0-.038-.096.133.133 0 0 0-.094-.04Zm-.896-3.685a1.295 1.295 0 0 0-.919.393c-.243.25-.379.586-.377.937a1.342 1.342 0 0 0 .377.938 1.304 1.304 0 0 0 .92.393c.346-.002.677-.143.92-.393s.379-.587.377-.938c0-.735-.581-1.33-1.296-1.33h-.002Zm15.918 4.49h-.331v.434h.331c.165 0 .264-.083.264-.216 0-.142-.099-.217-.264-.217Zm.215.619.36.517h-.304l-.323-.474h-.279v.474h-.254v-1.37h.595c.31 0 .515.163.515.436a.412.412 0 0 1-.31.417Zm-.282-1.31c-.652 0-1.146.532-1.146 1.183 0 .65.49 1.175 1.139 1.175.652 0 1.147-.532 1.147-1.183 0-.65-.492-1.174-1.14-1.174Zm-.007 2.488a1.259 1.259 0 0 1-.904-.384 1.296 1.296 0 0 1-.368-.92c0-.717.563-1.314 1.279-1.314a1.259 1.259 0 0 1 .903.384 1.295 1.295 0 0 1 .369.921c0 .717-.563 1.314-1.279 1.314Z">
+                </path>
+            </svg>
+        </div>
+        <hr class="reg_hr">
+        <!-- INputs ////////////////////////-->
+        <form action="http://localhost:3333" method="post" class="reg_form" name="reges" id="reges">
+            <label for="name" class="name_label ">
+                <p class="inp_p">Login</p> <span class="taken none">already taken</span>
+                <input type="text" class="name_inp comon_inp" id="name" name="name" required minlength="6" maxlength="15">
+            </label>
+            <label for="pass" class="name_label">
+                <p class="inp_p">Password</p>
+                <input type="password" name="password" class="pass_inp comon_inp" id="pass" required minlength="7">
+            </label>
+            <label for="pass" class="name_label">
+                <p class="inp_p">Acept password</p>
+                <input type="password" class="pass_inp comon_inp" name="password_confirm" id="pass" required
+                    minlength="7">
+            </label>
+            <!-- <label for="pass" class="name_label">
+                <p class="inp_p">Image</p>
+                <input type="file" class="file_inp " id="pass" onchange="donwload(this)" required>
+            </label> -->
+            <button type="submit" class="registr_btn">Sign up</button>
+        </form>
+        <div class="have">
+            <span class="have_ak">Have account?</span><span class="ent_p">Log in</span>
+
+        </div>
+    </div>
+    <div class="enter_box none">
+        <img src="./img/9104213_close_cross_remove_delete_icon (1).svg" class=" cross_boxes1" alt="">
+        <div class="blogo_box">
+            <svg role="img" viewBox="0 0 78 24" class="big_logo">
+                <path
+                    d="M18.616 10.639c-3.77-2.297-9.99-2.509-13.59-1.388a1.077 1.077 0 0 1-1.164-.363 1.14 1.14 0 0 1-.119-1.237c.136-.262.37-.46.648-.548 4.132-1.287 11-1.038 15.342 1.605a1.138 1.138 0 0 1 .099 1.863 1.081 1.081 0 0 1-.813.213c-.142-.02-.28-.07-.403-.145Zm-.124 3.402a.915.915 0 0 1-.563.42.894.894 0 0 1-.69-.112c-3.144-1.983-7.937-2.557-11.657-1.398a.898.898 0 0 1-.971-.303.952.952 0 0 1-.098-1.03.929.929 0 0 1 .54-.458c4.248-1.323 9.53-.682 13.14 1.595a.95.95 0 0 1 .3 1.286Zm-1.43 3.267a.73.73 0 0 1-.45.338.712.712 0 0 1-.553-.089c-2.748-1.722-6.204-2.111-10.276-1.156a.718.718 0 0 1-.758-.298.745.745 0 0 1-.115-.265.757.757 0 0 1 .092-.563.737.737 0 0 1 .457-.333c4.455-1.045 8.277-.595 11.361 1.338a.762.762 0 0 1 .241 1.028ZM11.696 0C5.237 0 0 5.373 0 12c0 6.628 5.236 12 11.697 12 6.46 0 11.698-5.372 11.698-12 0-6.627-5.238-12-11.699-12h.001Zm20.126 11.078c-2.019-.494-2.379-.84-2.379-1.57 0-.688.633-1.151 1.572-1.151.91 0 1.814.352 2.76 1.076a.131.131 0 0 0 .187-.03l.987-1.426a.139.139 0 0 0-.025-.185c-1.127-.928-2.396-1.378-3.88-1.378-2.18 0-3.703 1.342-3.703 3.263 0 2.06 1.315 2.788 3.585 3.352 1.932.457 2.258.84 2.258 1.524 0 .757-.659 1.229-1.72 1.229-1.18 0-2.141-.408-3.216-1.364a.13.13 0 0 0-.188.016l-1.106 1.35a.137.137 0 0 0 .013.188c1.252 1.147 2.79 1.752 4.451 1.752 2.35 0 3.869-1.317 3.869-3.356 0-1.723-1.003-2.676-3.465-3.29Zm10.487 2.31c0 1.454-.874 2.47-2.125 2.47-1.235 0-2.169-1.061-2.169-2.47 0-1.41.933-2.47 2.17-2.47 1.23 0 2.124 1.038 2.124 2.47Zm-1.706-4.354c-1.018 0-1.854.412-2.543 1.256v-.95a.136.136 0 0 0-.038-.095.132.132 0 0 0-.093-.04h-1.81a.131.131 0 0 0-.093.04.136.136 0 0 0-.039.096v10.546c0 .076.06.137.133.137h1.809a.132.132 0 0 0 .093-.041.136.136 0 0 0 .038-.096v-3.329c.69.794 1.525 1.18 2.543 1.18 1.893 0 3.808-1.494 3.808-4.35 0-2.858-1.915-4.354-3.808-4.354Zm8.72 6.839c-1.297 0-2.274-1.068-2.274-2.486 0-1.422.943-2.455 2.244-2.455 1.305 0 2.288 1.069 2.288 2.487 0 1.422-.949 2.454-2.258 2.454Zm0-6.838c-2.438 0-4.347 1.926-4.347 4.383 0 2.432 1.896 4.338 4.317 4.338 2.445 0 4.36-1.92 4.36-4.369 0-2.44-1.901-4.353-4.33-4.353Zm9.535.17h-1.99V7.117a.136.136 0 0 0-.08-.126.13.13 0 0 0-.052-.01h-1.809a.133.133 0 0 0-.093.04.136.136 0 0 0-.038.095v2.087h-.87a.131.131 0 0 0-.122.085.139.139 0 0 0-.01.052v1.595c0 .074.06.135.132.135h.87v4.126c0 1.667.809 2.513 2.404 2.513.648 0 1.186-.138 1.694-.434a.135.135 0 0 0 .067-.117V15.64a.137.137 0 0 0-.063-.115.13.13 0 0 0-.129-.006c-.349.18-.685.263-1.061.263-.58 0-.84-.271-.84-.876V11.07h1.99a.13.13 0 0 0 .094-.04.136.136 0 0 0 .039-.096V9.339a.137.137 0 0 0-.039-.096.132.132 0 0 0-.094-.04v.001Zm6.934.007v-.255c0-.755.281-1.092.914-1.092.376 0 .68.077 1.019.194a.13.13 0 0 0 .118-.02.135.135 0 0 0 .056-.11V6.365a.137.137 0 0 0-.026-.081.133.133 0 0 0-.068-.05 4.852 4.852 0 0 0-1.502-.22c-1.67 0-2.554.965-2.554 2.788v.393h-.87a.132.132 0 0 0-.093.04.136.136 0 0 0-.038.096v1.603c0 .075.059.136.132.136h.87v6.364c0 .075.058.135.131.135h1.809c.072 0 .131-.06.131-.135V11.07h1.69l2.586 6.362c-.294.669-.583.802-.977.802-.319 0-.654-.098-.998-.29a.133.133 0 0 0-.105-.01.135.135 0 0 0-.078.072l-.612 1.38a.137.137 0 0 0 .056.175 3.733 3.733 0 0 0 1.932.508c1.334 0 2.073-.638 2.724-2.355l3.137-8.317a.14.14 0 0 0-.014-.126.131.131 0 0 0-.108-.06h-1.883a.132.132 0 0 0-.126.092l-1.928 5.651L69.006 9.3a.133.133 0 0 0-.124-.088h-3.09v.001Zm-4.02-.008h-1.809a.132.132 0 0 0-.093.041.136.136 0 0 0-.038.096v8.094c0 .075.06.135.132.135h1.809c.072 0 .131-.06.131-.135V9.34a.136.136 0 0 0-.038-.096.133.133 0 0 0-.094-.04Zm-.896-3.685a1.295 1.295 0 0 0-.919.393c-.243.25-.379.586-.377.937a1.342 1.342 0 0 0 .377.938 1.304 1.304 0 0 0 .92.393c.346-.002.677-.143.92-.393s.379-.587.377-.938c0-.735-.581-1.33-1.296-1.33h-.002Zm15.918 4.49h-.331v.434h.331c.165 0 .264-.083.264-.216 0-.142-.099-.217-.264-.217Zm.215.619.36.517h-.304l-.323-.474h-.279v.474h-.254v-1.37h.595c.31 0 .515.163.515.436a.412.412 0 0 1-.31.417Zm-.282-1.31c-.652 0-1.146.532-1.146 1.183 0 .65.49 1.175 1.139 1.175.652 0 1.147-.532 1.147-1.183 0-.65-.492-1.174-1.14-1.174Zm-.007 2.488a1.259 1.259 0 0 1-.904-.384 1.296 1.296 0 0 1-.368-.92c0-.717.563-1.314 1.279-1.314a1.259 1.259 0 0 1 .903.384 1.295 1.295 0 0 1 .369.921c0 .717-.563 1.314-1.279 1.314Z">
+                </path>
+            </svg>
+        </div>
+        <hr class="reg_hr">
+        <!-- INputs ////////////////////////-->
+        <form action="" class="reg_form" name="auth">
+            <label for="name" class="name_label ">
+                <p class="inp_p">Login</p>
+                <input type="text" class="name_inp comon_inp" id="name" name="login" maxlength="10">
+            </label>
+            <label for="pass" class="name_label">
+                <p class="inp_p">Password</p>
+                <input type="password" class="pass_inp comon_inp" name="password" id="pass" required minlength="7">
+            </label>
+            <!-- <label for="pass" class="name_label">
+                <p class="inp_p">Фото аватара (необезательно)</p>
+                <input type="file" class="file_inp "  id="pass"onchange="donwload(this)" required>
+            </label> -->
+                            <button type="submit" class="voyti_btn2">Log in</button>
+
+        </form>
+
+        <hr class="reg_hr2">
+        <div class="have2">
+            <span class="have_ak2">No accaunt?</span>
+
+
+
+        </div>
+
+        <div class="rr"><button class="registr_btn2">Sign up Spotify</button></div>
+
+    </div>
+    <header>
+        <!-- <div></div> -->
+        
+        <div class="burger_box none1">
+            <span class="sp1"></span>
+            <span class="sp2"></span>
+            <span class="sp3"></span>
+        </div>
+        <div class="category22">
+            <div class="liked_songs2 common_category">
+                <img src="./img/love_icon.svg" alt="" class="img_category">
+            </div>
+            <div class="recent_songs2 common_category">
+                <img src="./img/songs_categoty.svg" alt="" class="img_category">
+            </div>
+            <div class="friends_songs2 common_category z_index">
+                <img src="./img/friends_group.svg" alt="" class="img_category">
+            </div>
+
+        </div>
+        <div class="left">
+            
+            <div class="pagin">
+                <div class="last">
+                    <img src="./img/back.svg" alt="" class="last_img">
+                </div>
+                <div class="next black">
+                    <img src="./img/front.svg" alt="" class="next_img">
+                </div>
+            </div>
+            <div class="input_box">
+                <img src="./img/search2.svg" alt="">
+                <input type="text" class="search_inp" placeholder="Artists, songs, or podcasts">
+            </div>
+        </div>
+        <div class="library_head none">
+            <div class="lib1 lib_common lib_high">Playlist</div>
+            <div class="lib2 lib_common">Podcasts</div>
+            <div class="lib3 lib_common">Artists</div>
+            <div class="lib4 lib_common">Albums</div>
+        </div>
+
+        <div class="right flex">
+            <div class="notification_box">
+                <div class="box1">
+                    <img src="./img/Ellipse 7.jpg" alt="">
+                    <p class="highlight">Alya Moross</p>
+                    <p class="not_highlight">started following you</p>
+                    <button class="notif_btn">Follow</button>
+                </div>
+            </div>
+            <button class="exit none">exit</button>
+            <p class="reg">Sign up</p>
+            <button class="zayti_btn">Log in</button>
+            <div class="notification none">
+                <img src="./img/notification.svg" alt="">
+                <div class="green_point"></div>
+            </div>
+        </div>
+    </header>
+    <!-- <img src="./ alt=""> -->
+    <aside class="menu_box none_bur">
+        <img src="./img/close_menu.svg" class="close_menu1  none" alt="">
+        <div class="logo_box">
+            <img src="./img/LOGO.svg" class="logo" alt="">
+            <img src="./img/close_menu.svg" class="close_menu" alt="">
+        </div>
+
+        <div class="categoties">
+            <div class="home_box gray back">
+                <img src="./img/home_icon.svg" class="home_icon" alt="">
+                <p class="txt1">Home</p>
+            </div>
+            <div class="search_box back">
+                <img src="./img/search.svg" class="search_icon" alt="">
+                <p class="txt2">Search</p>
+            </div>
+            <div class="library_box back">
+                <img src="./img/library.svg" alt="" class="library_icon">
+                <p class="txt3">Library</p>
+            </div>
+            <hr class="hr1">
+            <div class="love_box back">
+                <img src="./img/love.svg" class="love_icon" alt="">
+                <p class="txt4">Liked Songs</p>
+            </div>
+            <hr class="hr1">
+        </div>
+        <div class="overall_block">
+            <div class="playlist_main">
+                <div class="playlist_box">
+                    <p>Playlists</p>
+                    <img src="./img/Точка.svg" class="points" alt="">
+                    <div class="setting">
+                        <p>Select</p>
+                        <p>Create a Playlist</p>
+                        <p>Create a Folder</p>
+                    </div>
+                </div>
+                <div class="folder">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="folder_svg">
+                        <path
+                            d="M14 5.5V12.5556C14 12.6734 13.9532 12.7865 13.8698 12.8698C13.7865 12.9532 13.6734 13 13.5556 13H2.5C2.36739 13 2.24021 12.9473 2.14645 12.8536C2.05268 12.7598 2 12.6326 2 12.5V4C2 3.86739 2.05268 3.74021 2.14645 3.64645C2.24021 3.55268 2.36739 3.5 2.5 3.5H5.83333C5.94152 3.5 6.04679 3.53509 6.13333 3.6L7.86667 4.9C7.95321 4.96491 8.05848 5 8.16667 5H13.5C13.6326 5 13.7598 5.05268 13.8536 5.14645C13.9473 5.24021 14 5.36739 14 5.5Z" />
+                    </svg>
+                    <img src="./img/folderwith.svg" alt="">
+                </div>
+                <div class="janr">
+                    <!-- хирхоп -->
+                    <div class="hiphop show common1">
+                        <p>Hip-Hop</p>
+                        <img src="./img/стрелка.svg" alt="" class="show_img">
+                    </div>
+                    <div class="hiphop2 common2">
+                        <p class="small yak1">hiphop</p>
+                    </div>
+                    <!-- поп -->
+                    <div class="pop show1 common1">
+                        <p>Pop</p>
+                        <img src="./img/стрелка.svg" alt="" class="show_img">
+                    </div>
+                    <div class="pop2 common2">
+                        <p class="small yak2">pop</p>
+                    </div>
+                    <!-- rock -->
+                    <div class="rock common1">
+                        <p>Rock</p>
+                        <img src="./img/стрелка.svg" alt="" class="show_img">
+                    </div>
+                    <div class="common2 rock2">
+                        <p class="small yak3">Brit Rock</p>
+                        <p class="small yak4">90’s Rock</p>
+                    </div>
+                    <!-- coloborate -->
+                    <div class="colo common1">
+                        <p>Collaborative</p>
+                        <img src="./img/стрелка.svg" alt="" class="show_img">
+                    </div>
+                    <div class="colo2 common2">
+                        <p class="small yak5">Classic</p>
+                        <p class="small yak6">Dance dance dance</p>
+                    </div>
+                    <!-- your folow -->
+                    <div class="play common1">
+                        <p class="yak7">Playlists You Follow</p>
+                        <img src="./img/стрелка.svg" alt="" class="show_img">
+                    </div>
+                    <div class="play2 common2">
+                        <!-- <p class="small">Classic</p> -->
+                        <!-- <p class="small"></p> -->
+                    </div>
+                </div>
+
+            </div>
+            <button class="menu_btn">Download app</button>
+        </div>
+
+    </aside>
+    <!-- <div class="red"></div> -->
+    <!-- <div class="red"></div> -->
+    <main>
+        <div class="wrapper mar_wrap">
+            <div class="category">
+                <div class="liked_songs common_category">
+                    <img src="./img/love_icon.svg" alt="" class="img_category">
+                    <p>Liked Songs</p>
+                </div>
+                <div class="recent_songs common_category">
+                    <img src="./img/songs_categoty.svg" alt="" class="img_category">
+                    <p>Recently Played</p>
+                </div>
+                <div class="friends_songs common_category z_index">
+                    <img src="./img/friends_group.svg" alt="" class="img_category">
+                    <p>Friends Played</p>
+                </div>
+
+            </div>
+            <div class="main_box">
+                <div class="title">
+                    <div class="title1_box">
+                        <span class="title1">Made For <span class="gradient_text1">UNKNOWN</span></span>
+                        <p class="see_all">SEE ALL</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="slider ">
+                        <div class="slider-line slider-line0">
+                            <div class="slide weekly">
+                                <img src="./img/Personal Card1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide ">
+                                <img src="./img/Personal Card2.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide ">
+                                <img src="./img/Personal Card3.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Doja Cat, Kim Wilde, ABBA and more.</p>
+                            </div>
+                            <div class="slide ">
+                                <img src="./img/Personal Card4.jpg" alt="">
+                                <p class="slide_p1">Daily Mix 1</p>
+                                <p class="slide_p2">Doja Cat, Kim Wilde, ABBA and more</p>
+                            </div>
+                            <div class="slide ">
+                                <img src="./img/Personal Card5.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card6.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">Your weekly mixtape of fresh music. Enjoy new...</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div class="slider-prev none"><img src="./img/next_slide.svg" class="rotate180" alt="">
+                            </div>
+                            <div class="slider-next"><img class="next_slide" src="./img/next_slide.svg" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="title1_box">
+                        <span class="title1">Your <span class="gradient_text2">Shows</span></span>
+                        <p class="see_all">SEE ALL</p>
+                    </div>
+                </div>
+
+                <div class="container22">
+
+                    <div class="slider22 ">
+                        <div class="slider-line2 slider-line0">
+                            <div class="slide weekly1">
+                                <img src="./img/Personal1.jpg" alt="">
+                                <p class="slide_p1">UX Minimal</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal2.jpg" alt="">
+                                <p class="slide_p1">O Tarz Mı?</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal3.jpg" alt="">
+                                <p class="slide_p1">Açık Bilim</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal4.jpg" alt="">
+                                <p class="slide_p1">Design Gost</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal5.jpg" alt="">
+                                <p class="slide_p1">Fularsız Entellik</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal6.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal1.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div class="slider-prev1 none"><img src="./img/next_slide.svg" class="rotate180" alt="">
+                            </div>
+                            <div class="slider-next1"><img class="next_slide" src="./img/next_slide.svg" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="title1_box">
+                        <span class="title1">Your <span class="gradient_text3"> Playlists</span></span>
+                        <p class="see_all">SEE ALL</p>
+                    </div>
+                </div>
+                <div class="container_3">
+
+                    <div class="slider_3 ">
+                        <div class="slider-line3 slider-line0">
+                            <div class="slide weekly2" >
+                                <img src="./img/Personal Card11.jpg" alt="">
+                                <p class="slide_p1">Verse 1</p>
+                                <p class="slide_p2">100 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card12.jpg" alt="">
+                                <p class="slide_p1">Verse 2</p>
+                                <p class="slide_p2">20 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card13.jpg" alt="">
+                                <p class="slide_p1">Verse 3</p>
+                                <p class="slide_p2">2 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card14.jpg" alt="">
+                                <p class="slide_p1">Verse 4</p>
+                                <p class="slide_p2">10 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card15.jpg" alt="">
+                                <p class="slide_p1">Verse 5</p>
+                                <p class="slide_p2">35 followers</p>
+
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card15.jpg" alt="">
+                                <p class="slide_p1">Verse 5</p>
+                                <p class="slide_p2">35 followers</p>
+
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card15.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">2 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card15.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">10 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card15.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">35 followers</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card15.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                                <p class="slide_p2">100 followers</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div class="slider-prev3 none"><img src="./img/next_slide.svg" class="rotate180" alt="">
+                            </div>
+                            <div class="slider-next3"><img class="next_slide" src="./img/next_slide.svg" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="title1_box">
+                        <span class="title1">Playlists <span class="gradient_text4"> You Follow</span></span>
+
+                    </div>
+                </div>
+                <div class="container_3">
+
+                    <div class="slider_3 ">
+                        <div class="slider-line3 slider-line0">
+                            <div class="slide weekly3">
+                                <img src="./img/Personal Card21.jpg" alt="">
+                                <p class="slide_p1">Indie Covers</p>
+                                <p class="slide_p2">Indie takes on songs others make.</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card22.jpg" alt="">
+                                <p class="slide_p1">Your Top Songs 2020</p>
+                                <p class="slide_p2">The songs you loved most this year, all wrapped up.</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card23.jpg" alt="">
+                                <p class="slide_p1">00s Rock Anthems</p>
+                                <p class="slide_p2">These songs rocked the 00s</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="title1_box">
+                        <span class="title1">Suggested <span class="gradient_text5"> Artists</span></span>
+                        <p class="see_all">SEE ALL</p>
+                    </div>
+                </div>
+                <div class="container_4">
+
+                    <div class="slider_4 ">
+                        <div class="slider-line4 slider-line0">
+                            <div class="slide weekly4">
+                                <img src="./img/Personal Card31.jpg" alt="">
+                                <p class="slide_p1">The Weeknd</p>
+
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card32.jpg" alt="">
+                                <p class="slide_p1">Arctic Monkeys</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card34.jpg" alt="">
+                                <p class="slide_p1">The Smiths</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card35.jpg" alt="">
+                                <p class="slide_p1">Billie Ellish</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card36.jpg" alt="">
+                                <p class="slide_p1">Ekin Beril</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card35.jpg" alt="">
+                                <p class="slide_p1">Verse 5</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card35.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card35.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card35.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/Personal Card35.jpg" alt="">
+                                <p class="slide_p1">Discover Weekly</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <div class="slider-prev4 none"><img src="./img/next_slide.svg" class="rotate180" alt="">
+                            </div>
+                            <div class="slider-next4"><img class="next_slide" src="./img/next_slide.svg" alt=""></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="red"></div>
+            </div>
+            <div class="library none">
+                <p class="lib_title1 hip1">Playlists</p>
+                <div class="lib_colonies">
+                    <div class="title1 lib_title">
+                        <img src="./img/folder_svg.svg" alt="">
+                        <p class="HIP">Hip-hop</p>
+                    </div>
+                    <div class="slider-line  slider-line0 ">
+                        <div class="slide ">
+                            <img src="./img/Personal Cardd1.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 1</p>
+                                <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                            </div>
+
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Cardd2.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 2</p>
+                                <img src="./img/eye_close.svg" class="eye_lib eye_close eye_lib1" alt="" width="18px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title1 lib_title">
+                        <img src="./img/folder_svg.svg" alt="">
+                        <p class="">Pop</p>
+                    </div>
+                    <div class="container_5">
+
+                        <div class="slider_5 ">
+                            <div class="slider-line5 slider-line0 " >
+                                <div class="slide">
+                                    <img src="./img/Personal Card11.jpg" alt="">
+                                    <div class="down_lib">
+                                        <p class="slide_p1">Verse 1</p>
+                                        <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/Personal Card12.jpg" alt="">
+                                    <div class="down_lib">
+                                        <p class="slide_p1">Verse 2</p>
+                                        <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/Personal Card13.jpg" alt="">
+                                    <div class="down_lib">
+                                        <p class="slide_p1">Verse 3</p>
+                                        <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/Personal Card14.jpg"  alt="">
+                                    <div class="down_lib hip5">
+                                        <p class="slide_p1">Verse 4</p>
+                                        <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <img src="./img/Personal Card15.jpg" alt="">
+                                    <div class="down_lib">
+                                        <p class="slide_p1">Verse 5</p>
+                                        <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="btns ">
+                                <div class="slider-prev5 none"><img src="./img/next_slide.svg" class="rotate180" alt="">
+                                </div>
+                                <div class="slider-next5 none"><img class="next_slide" src="./img/next_slide.svg"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title1 lib_title">
+                        <img src="./img/folder_svg.svg"  alt="">
+                        <p class="hip3">Rock</p>
+                    </div>
+                    <div class="slider-line slider-line0 weekly2">
+                        <div class="slide">
+                            <img src="./img/Personal Cardd1.jpg" alt="">
+                            <div class="down_lib ">
+                                <p class="slide_p1 hip2">Verse 1</p>
+                                <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                            </div>
+
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Cardd2.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 2</p>
+                                <img src="./img/eye_open.svg" class="eye_lib eye_close eye_lib1" alt="" width="18px">
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Cardd2.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 2</p>
+                                <img src="./img/eye_close.svg" class="eye_lib eye_close eye_lib1" alt="" width="18px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title1 lib_title">
+                        <img src="./img/folder_svg.svg" alt="">
+                        <p class="hip4">Collaborative</p>
+                    </div>
+                    <div class="slider-line slider-line0">
+                        <div class="slide">
+                            <img src="./img/Personal Cardd1.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 1</p>
+                                <div class="imgs">
+                                    <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    <img src="./img/grup_pepe.svg" class="group" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Cardd2.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 1</p>
+                                <div class="imgs">
+                                    <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    <img src="./img/grup_pepe.svg" class="group" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="slide ">
+                            <img src="./img/Personal Cardd2.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 1</p>
+                                <div class="imgs">
+                                    <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+                                    <img src="./img/grup_pepe.svg" class="group" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title ">
+                        <div class="title1 lib_title">
+                            <span class="title1">Playlists <span class="gradient_text4"> You Follow</span></span>
+
+                        </div>
+                    </div>
+                    <div class="slider-line3 slider-line0">
+                        <div class="slide weekly3">
+                            <img src="./img/Personal Card21.jpg" alt="">
+                            <p class="slide_p1">Indie Covers</p>
+                            <p class="slide_p2">Indie takes on songs others make.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Card22.jpg" alt="">
+                            <p class="slide_p1">Your Top Songs 2020</p>
+                            <p class="slide_p2">The songs you loved most this year, all wrapped up.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Card23.jpg" alt="">
+                            <p class="slide_p1">00s Rock Anthems</p>
+                            <p class="slide_p2">These songs rocked the 00s</p>
+                        </div>
+
+                    </div>
+                    <hr class="lib_hr">
+                    <div class="slider-line slider-line0">
+                        <div class="slide">
+                            <img src="./img/Personal Cardd1.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 1</p>
+                                <div class="imgs">
+                                    <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Personal Cardd2.jpg" alt="">
+                            <div class="down_lib">
+                                <p class="slide_p1">Verse 1</p>
+                                <div class="imgs">
+                                    <img src="./img/eye_open.svg" class="eye_lib" alt="" width="18px">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+            <div class="friends_playlist none">
+                <div class="friends_head">
+                    <div class="fr_left">
+                        <img src="./img/friend+icon.svg" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">Friends Played</p>
+                        <p class="desc_p"> A blend of music for you. Updates with your friend activities.</p>
+                        <div class="madefor">
+                            <p>Made For</p>
+                            <p class="pl_high"></p>
+                            <p class="point">.</p>
+                            <p>50 songs, 3 hr 15 min</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" class="play_btn_main" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musics_box">
+                        <div class="music_titles">
+                            <p class="add_txt4">TITLE</p>
+                            <p class="add_txt3" >Album</p>
+                            <p class="add_txt2">date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16"  height="16" class="time" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="all_musics">
+                        </div>
+                    </div>
+                    <hr class="fr_hr">
+                </div>
+                <audio class="audio"></audio>
+                <div class="red"></div>
+                <img src="" alt="">
+            </div>
+            <div class="weekly_common weekly_box none">
+                <div class="friends_head">
+                    <div class="fr_left">
+                        <img src="./img/Personal Card1.jpg" class="rad" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">Discover Weekly</p>
+                        <p class="desc_p"> Your weekly mixtape of fresh music. Enjoy new...</p>
+                        <div class="madefor">
+                            <p>Made For</p>
+                            <p class="pl_high"></p>
+                            <p class="point">.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="friends_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musics_box1">
+                        <div class="music_titles">
+                            <p>TITLE</p>
+                            <p>Album</p>
+                            <p class="add_txt2">date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16" height="16" class="time" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="all_musics1">
+                        </div>
+                        <div class="red"></div>
+                    </div>
+                    <hr class="fr_hr">
+                </div>
+            </div>
+            <div class="weekly_box1 weekly_common none">
+                <div class="friends_head">
+                    <div class="fr_left">
+                        <img src="./img/Personal1.jpg" class="rad" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">UX Minimal</p>
+                        <p class="desc_p"> Your weekly mixtape of fresh music. Enjoy new...</p>
+                        <div class="madefor">
+                            <p>Made For</p>
+                            <p class="pl_high"></p>
+                            <p class="point">.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="friends_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musics_box">
+                        <div class="music_titles">
+                            <p>TITLE</p>
+                            <p>Album</p>
+                            <p  class="add_txt2">date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16" height="16" class="time" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="all_musics2">
+                        </div>
+                        <div class="red"></div>
+                        
+                    </div>
+                    <hr class="fr_hr">
+                </div>
+            </div>
+            <div class="weekly_box2 weekly_common none">
+                <div class="friends_head">
+                    <div class="fr_left">
+                        <img src="./img/Personal Card11.jpg" class="rad" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">Verse 1</p>
+                        <p class="desc_p"> Your weekly mixtape of fresh music. Enjoy new...</p>
+                        <div class="madefor">
+                            <p>Made For</p>
+                            <p class="pl_high"></p>
+                            <p class="point">.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="friends_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musics_box">
+                        <div class="music_titles">
+                            <p>TITLE</p>
+                            <p>Album</p>
+                            <p class="add_txt2">date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16" height="16" class="time" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="all_musics3">
+                        </div>
+                        <div class="red"></div>
+
+                    </div>
+                    <hr class="fr_hr">
+                </div>
+            </div>
+            <div class="weekly_box3 weekly_common none">
+                <div class="friends_head">
+                    <div class="fr_left">
+                        <img src="./img/Personal Card21.jpg" class="rad" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">Indie Covers</p>
+                        <p class="desc_p">Indie takes on songs others make.</p>
+                        <div class="madefor">
+                            <p>Made For</p>
+                            <p class="pl_high"></p>
+                            <p class="point">.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="friends_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musics_box">
+                        <div class="music_titles">
+                            <p>TITLE</p>
+                            <p>Album</p>
+                            <p class="add_txt2">date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16" class="time" height="16" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="all_musics4">
+                        </div>
+                        <div class="red"></div>
+
+                    </div>
+                    <hr class="fr_hr">
+                </div>
+            </div>
+            <div class="weekly_box4 weekly_common none">
+                <div class="friends_head">
+                    <div class="fr_left">
+                        <img src="./img/Personal Card31.jpg" class="rad" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">The Weeknd</p>
+                        <p class="desc_p"> Your weekly mixtape of fresh music. Enjoy new...</p>
+                        <div class="madefor">   
+                            <p>Made For</p>
+                            <p class="pl_high"></p>
+                            <p class="point">.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="friends_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="musics_box">
+                        <div class="music_titles">
+                            <p>TITLE</p>
+                            <p>Album</p>
+                            <p class="add_txt2">date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16" height="16" class="time" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="all_musics5">
+                        </div>
+                        <div class="red"></div>
+
+                    </div>
+                    <hr class="fr_hr">
+                </div>
+            </div>
+            <div class="find_box none">
+                <div class="find_musics">
+                        
+                </div>
+                <p class="title_browse">Browse all</p>
+                <div class="browse_all">
+
+                    <img src="./img/Search Genre 1.svg" alt="">
+                    <img src="./img/Frame 57 (2).svg" alt="">
+                    <img src="./img/Frame 56 (2).svg" alt="">
+                    <img src="./img/Search Genre 4.svg" alt="">
+                    <img src="./img/Search Genre 5.svg" alt="">
+                    <img src="./img/Frame 52.svg" alt="">
+                    <img src="./img/Frame 53.svg" alt="">
+                    <img src="./img/Frame 54.svg" alt="">
+                    <img src="./img/Frame 54.svg" alt="">
+                    <img src="./img/Frame 56 (2).svg" alt="">
+                    <img src="./img/Frame 57.svg" alt="">
+                    <img src="./img/Frame 58.svg" alt="">
+                    <img src="./img/Frame 59.svg" alt="">
+                    <img src="./img/Frame 60.svg" alt="">
+                    <img src="./img/Frame 61.svg" alt="">
+                    <img src="./img/Frame 62.svg" alt="">
+                    <img src="./img/Frame 63.svg" alt="">
+                    <img src="./img/Frame 64.svg" alt="">
+                    <img src="./img/Frame 65.svg" alt="">
+                    <img src="./img/Frame 66.svg" alt="">
+                    <div class="red"></div>
+                </div>
+            </div>
+            <div class="loved_songs none">
+                <div class="loved_head">
+                    <div class="fr_left">
+                        <img class="loved_img" src="./img/lovedzzzz.svg" alt="">
+                    </div>
+                    <div class="fr_right">
+                        <p class="fr_pl">playlıst</p>
+                        <p class="fr_big_p">Liked Songs</p>
+                        <p class="desc_p"> A blend of music for you. Updates with your friend activities.</p>
+                        <div class="madefor">
+                            <p>Made For</p>
+                            <p class="pl_high pl_high2"></p>
+                            <p class="point">.  </p>
+                            <p>50 songs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loved_main">
+                    <div class="control_friends">
+                        <div class="cont_left">
+                            <img src="./img/Play (1)_fr.svg" alt="">
+                            <img src="./img/love_icon_fr.svg" alt="">
+                            <img src="./img/dowland_icon.svg" alt="">
+                            <img src="./img/tree_point.svg" alt="">
+
+                        </div>
+                        <div class="cont_right">
+                            <div class="input_box2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path
+                                        d="M7.25 12.5C10.1495 12.5 12.5 10.1495 12.5 7.25C12.5 4.35051 10.1495 2 7.25 2C4.35051 2 2 4.35051 2 7.25C2 10.1495 4.35051 12.5 7.25 12.5Z"
+                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.9622 10.9625L13.9997 14.0001" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <input type="text" class="search_inp2" value="Artists, songs, or podcasts">
+
+                            </div>
+                            <div class="sort">
+                                <img src="./img/sort.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loved_musics">
+                        <div class="music_titles">
+                            <p>TITLE</p>
+                            <p>Album</p>
+                            <p>date added</p>
+                            <p class="add_txt">added by</p>
+                            <svg width="16" height="16" class="time" viewBox="0 0 16 16" 
+                                >
+                                <path
+                                    d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z"
+                                    stroke="#777777" stroke-miterlimit="10" />
+                                <path d="M8 4.5V8H11.5" stroke="#777777" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="love_mus">
+                        </div>
+                    </div>
+                <audio class="audio2"></audio>
+                    <div class="red"></div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </main>
+    <div class="player_box">
+        <div class="music_info_box">
+            <div class="music_info">
+                <div class="info_left">
+                    <img  class="info_img" alt="">
+                </div>
+                <div class="info_right">
+                    <p class="info_name"></p>
+                    <p class="info_author"></p>
+                </div>
+            </div>
+        
+        </div>
+        <div class="player">
+            <div class="top">
+                <div><svg viewBox="0 0 17 16" class="shuffle">
+                        <path
+                            d="M4.95205 6.62727L5.62329 5.86364C4.56849 4.62273 3.03425 3.95455 1.5 3.95455V4.90909C2.74658 4.90909 3.99315 5.48182 4.85616 6.43636L4.95205 6.62727ZM12.1438 11.1136C10.9932 11.1136 9.93836 10.6364 9.07534 9.87273L8.5 10.6364C9.4589 11.5909 10.8014 12.0682 12.1438 12.0682V13.5L15.5 11.5909L12.1438 9.68182V11.1136ZM12.1438 5.38636V6.81818L15.5 4.90909L12.1438 3V4.43182C10.6096 4.43182 9.07534 5.1 8.11644 6.34091L4.85616 10.0636C3.99315 11.0182 2.74658 11.5909 1.5 11.5909V12.5455C3.03425 12.5455 4.56849 11.8773 5.5274 10.6364L8.78767 6.91364C9.65068 5.95909 10.8973 5.38636 12.1438 5.38636Z" />
+                    </svg></div>
+                
+                <img src="./img/Back_music.svg" class="prev_song" alt="">
+                        
+                <!-- <div class="play_box "> -->
+                    <img src="./img/Play sonfggg1).svg" class="play_box" alt="">
+
+                <!-- </div> -->
+                <!-- <div class="pause_box none"> -->
+                    <img  src="./img/songg_pause.svg" width="40px" class="pause_box none" alt="">
+
+                <!-- </div> -->
+                <img src="./img/Forward_music.svg" class="next_song" alt="">
+                <div><svg class="repeate" viewBox="0 0 17 16">
+                        <path
+                            d="M6 4.5H10.5V6L14 4L10.5 2V3.5H6C3.5 3.5 1.5 5.5 1.5 8C1.5 8.6 1.6 9.2 1.9 9.8L2.8 9.3C2.6 8.9 2.5 8.5 2.5 8C2.5 6.1 4.1 4.5 6 4.5ZM15.1 6.2L14.2 6.7C14.4 7.1 14.5 7.5 14.5 8C14.5 9.9 12.9 11.5 11 11.5H6.5V10L3 12L6.5 14V12.5H11C13.5 12.5 15.5 10.5 15.5 8C15.5 7.4 15.4 6.8 15.1 6.2Z" />
+                    </svg>
+                </div>
+
+
+            </div>
+            <div class="bottom">
+                00:<span class="now_time">00</span>
+                <div class="progress_box">
+                    <div class="progress_bar"></div>
+                </div>
+                00:<p class="all_time">00</p>
+            </div>
+
+        </div>
+        <div class="music_volue">
+            <img src="./img/cue_card.svg" class="mr2" alt="">
+            <img src="./img/playlist2.svg" alt="" class="mr">
+            <img src="./img/comp.svg" alt="" class="mr3"> 
+            <img src="./img/Listening on.svg" class="vol" alt="">
+            
+            <div class="volue_progress">
+                    <span class="bar">
+                        <span class="fill" width="100%"></span>
+                    </span>
+                    <input type="range" value="100" max="100" id="rang" min="0" class="rang valume-slider">
+            </div>
+            
+            <img src="./img/Full Screen.svg" alt="">
+        </div>
+    </div>
+    <div class="friends_box">
+        <div class="friends_icons">
+
+            <img src="./img/frieds.svg" class="frieds" alt="">
+            <img src="./img/close_menu.svg" class="friends_open" alt="">
+        </div>
+
+    </div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async src="./JS/script.js"></script>
+</body>
+
+</html>
